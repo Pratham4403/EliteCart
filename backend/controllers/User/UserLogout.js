@@ -2,9 +2,13 @@ const AddToCartModel = require("../../models/AddToCartModel");
 
 async function UserLogout(req,res){
     try{
-
+        const tokenOption = {
+                httpOnly : true,
+                secure : true,
+                sameSite : 'None'
+            }
         const userId = req.userId;
-        res.clearCookie("token");
+        res.clearCookie("token",tokenOption);
 
         res.status(200).json({
             message : "Logged out successfully",
