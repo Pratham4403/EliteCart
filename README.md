@@ -42,7 +42,7 @@ EliteCart/
 | **Backend**         | Node.js, Express                      |
 | **Database**        | MongoDB                               |
 | **Payment Gateway** | Stripe    |
-| **Deployment**      | Vercel / Render |
+| **Deployment**      | Vercel  |
 
 ---
 
